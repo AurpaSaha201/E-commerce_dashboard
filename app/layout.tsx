@@ -4,31 +4,44 @@ import { useState } from "react";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
+/*import Sidebar from "@/components/Sidebar";*/
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#f9fafb]">
+
+        {/* Sidebar 
         <Sidebar open={sidebarOpen} />
 
+      
         <div
           className={`
             min-h-screen
-            transition-all duration-300
+            transition-all
+            duration-300
             ${sidebarOpen ? "ml-[315px]" : "ml-[100px]"}
           `}
-        >
+        >*/}
+
+          {/* Navbar */}
           <Navbar
             onMenuClick={() => setSidebarOpen(!sidebarOpen)}
           />
 
-          <main className="p-6">
+          {/* Page Content */}
+          <main className="pt-[85px]">
             {children}
           </main>
-        </div>
+{/*
+        </div>*/}
+
       </body>
     </html>
   );
