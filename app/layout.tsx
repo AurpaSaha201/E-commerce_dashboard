@@ -1,6 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import "./globals.css";
+
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 
@@ -10,17 +12,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-       <Sidebar open={sidebarOpen} />
 
-      
+        {/* Sidebar */}
+        <Sidebar open={sidebarOpen} />
+
+        {/* Main Area */}
         <div
-          className={` min-h-screen transition-all duration-300
+          className={`
+            min-h-screen
+            transition-all
+            duration-300
             ${sidebarOpen ? "ml-[315px]" : "ml-[100px]"}
           `}
         >
 
+          {/* Navbar */}
           <Navbar
-            onMenuClick={() => setSidebarOpen(!sidebarOpen)}
+            onMenuClick={() =>
+              setSidebarOpen(!sidebarOpen)
+            }
             sidebarOpen={sidebarOpen}
           />
 
