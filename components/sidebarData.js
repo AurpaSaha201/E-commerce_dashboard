@@ -294,7 +294,7 @@ export const supportItems = [
      children: [
       {
         title: "Ticket List",
-        href: "/ticketlist",
+        href: "/support-ticket",
       },
 
       {

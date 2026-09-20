@@ -10,7 +10,7 @@ export default function SupportForm({ onAddTicket }) {
   const [status, setStatus] = useState("Pending");
 
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault();//Browser-r default form submit behavior off kore
 
     const newTicket = {
       id: id,
@@ -20,10 +20,8 @@ export default function SupportForm({ onAddTicket }) {
       createDate: createDate,
       status: status,
     };
-
+//tcket create korar por input clear
     onAddTicket(newTicket);
-
-    // Input clear
     setName("");
     setId("");
     setSubject("");

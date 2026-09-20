@@ -1,4 +1,4 @@
-/*"use client";
+"use client";
 import {Search,MoreHorizontal,} from "lucide-react";
 
 export default function SupportTable({tickets,activeFilter,setActiveFilter,}) {
@@ -53,7 +53,7 @@ export default function SupportTable({tickets,activeFilter,setActiveFilter,}) {
             </tr>
           </thead>
 
-          {/* Dynamic Rows */}
+          
           <tbody>
             {tickets.map((ticket) => (
               <tr  key={ticket.id}  className="border-b border-gray-200 hover:bg-gray-50">
