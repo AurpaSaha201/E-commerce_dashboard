@@ -65,7 +65,7 @@ export const menuItems = [
 
   {
     title: "AI Assistant",
-    href: "/ai-assistant",
+    href: "/",
     icon: Bot,
     badge: "NEW",
     arrow: true,
@@ -97,7 +97,7 @@ export const menuItems = [
 
   {
     title: "E-commerce",
-    href: "/ecommerce",
+    href: "/",
     icon: ShoppingCart,
     arrow: true,
 
@@ -146,7 +146,7 @@ export const menuItems = [
 
   {
     title: "Task",
-    href: "/task",
+    href: "/",
     icon: ListTodo,
     arrow: true,
 
@@ -166,7 +166,7 @@ export const menuItems = [
 
   {
     title: "Forms",
-    href: "/forms",
+    href: "/",
     icon: FilePenLine,
     arrow: true,
        children: [
@@ -185,7 +185,7 @@ export const menuItems = [
 
   {
     title: "Tables",
-    href: "/tables",
+    href: "/",
     icon: Table2,
     arrow: true,
        children: [
@@ -204,7 +204,7 @@ export const menuItems = [
 
   {
     title: "Pages",
-    href: "/pages",
+    href: "/",
     icon: Files,
     arrow: true,
        children: [
@@ -250,7 +250,7 @@ export const menuItems = [
 
   {
     title: "Layouts",
-    href: "/layouts",
+    href: "/",
     icon: PanelsTopLeft,
     badge: "NEW",
     arrow: true,
@@ -280,14 +280,14 @@ export const supportItems = [
 
   {
     title: "Chat",
-    href: "/chat",
+    href: "/",
     icon: MessageCircle,
   },
 
 
   {
     title: "Support Ticket",
-    href: "/support-ticket",
+    href: "/",
     icon: Headphones,
     badge: "NEW",
     arrow: true,
@@ -307,7 +307,7 @@ export const supportItems = [
 
   {
     title: "Email",
-    href: "/email",
+    href: "/",
     icon: Mail,
     arrow: true,
       children: [
@@ -332,7 +332,7 @@ export const otherItems = [
 
   {
     title: "Charts",
-    href: "/charts",
+    href: "/",
     icon: ChartPie,
     badge: "NEW",
 
@@ -369,7 +369,7 @@ export const otherItems = [
 
   {
     title: "Maps",
-    href: "/maps",
+    href: "/",
     icon: MapPinned,
     badge: "NEW",
     arrow: true,
@@ -389,7 +389,7 @@ export const otherItems = [
 
   {
     title: "UI Elements",
-    href: "/ui-elements",
+    href: "/",
     icon: Cuboid,
     arrow: true,
       children: [
@@ -435,7 +435,7 @@ export const otherItems = [
 
   {
     title: "Authentication",
-    href: "/authentication",
+    href: "/",
     icon: Plug,
     arrow: true,
       children: [

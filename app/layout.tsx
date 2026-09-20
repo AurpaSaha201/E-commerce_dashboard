@@ -17,20 +17,14 @@ export default function RootLayout({ children }) {
         <Sidebar open={sidebarOpen} />
 
         {/* Main Area */}
-        <div
-          className={`
-            min-h-screen
-            transition-all
-            duration-300
+        <div className={` min-h-screen transition-all  duration-300
             ${sidebarOpen ? "ml-[315px]" : "ml-[100px]"}
           `}
         >
 
           {/* Navbar */}
           <Navbar
-            onMenuClick={() =>
-              setSidebarOpen(!sidebarOpen)
-            }
+            onMenuClick={() =>setSidebarOpen(!sidebarOpen) }
             sidebarOpen={sidebarOpen}
           />
 
